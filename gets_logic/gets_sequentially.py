@@ -7,9 +7,6 @@ def sequentially_function():
 
     print('+ Starting sequentially function...')
 
-    def download_content(url):
-        response = requests.get(url)
-        # print(f'Content {url} has length {len(response.content)}')
 
     urls = [
         'https://jsonplaceholder.typicode.com/posts/1',
