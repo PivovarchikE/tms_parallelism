@@ -7,16 +7,14 @@ def sequentially_function():
 
     print('+ Starting sequentially function...')
 
-    def monte_carlo_pi(n):
-        inside = 0
-        for _ in range(n):
-            x = random.random()
-            y = random.random()
-            if x * x + y * y <= 1:
-                inside += 1
-        return 4 * inside / n
+    inside = 0
+    for _ in range(15000000):
+        x = random.random()
+        y = random.random()
+        if x * x + y * y <= 1:
+            inside += 1
+    return 4 * inside / n
 
-    result = monte_carlo_pi(15000000)
 
     end_time = time.time()
 
