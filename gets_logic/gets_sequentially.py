@@ -23,7 +23,7 @@ def sequentially_function():
     ] * 10
 
     for url in urls:
-        download_content(url)
+        response = requests.get(url)
 
     end_time = time.time()
 
